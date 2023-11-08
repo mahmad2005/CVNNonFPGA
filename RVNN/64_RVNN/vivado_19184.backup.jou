@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Oct 20 16:36:59 2023
+# Process ID: 19184
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20744 E:\FPGAProject\01102022\FPGAResearch\Z_Fresh\Z_Final\FPGA_Implementation\Pipelined_8_Input\RVNN\64_RVNN\64_RVNN.xpr
+# Log file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.xpr
+update_compile_order -fileset sources_1

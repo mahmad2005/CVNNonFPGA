@@ -1,0 +1,40 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use work.nn_package.all;
+
+entity nn_tb is
+--  Port ( );
+end nn_tb;
+
+architecture Behavioral of nn_tb is
+component nn is
+    Port ( 
+        clk: in std_logic;
+        x_in: in x_array;
+        y_out: out y_array);
+end component;
+signal clk : std_logic;
+signal x : x_array;
+signal y : y_array;
+begin
+process
+begin
+clk <= '0';
+wait for 10ns;
+clk <= '1';
+wait for 10ns;
+end process;
+process
+begin
+for i in 0 to 3990 loop
+	x(0)<= to_signed(integer(input_1(i)*ONE),N);
+	x(1)<= to_signed(integer(input_2(i)*ONE),N);
+	x(2)<= to_signed(integer(input_3(i)*ONE),N);
+	wait for 20ns;
+	end loop;
+end process;
+
+NN_unit: nn
+    port map (clk=>clk, x_in => x, y_out => y);
+end Behavioral;

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="nn_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="nn_package" />
+            <top_module name="nn_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="158.401 ns"></ZoomEndTime>
+      <Cursor1Time time="62.200 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="178"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/nn_tb/x" type="array">
+      <obj_property name="ElementShortName">x[0:15][15:0]</obj_property>
+      <obj_property name="ObjectShortName">x[0:15][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/x_imag" type="array">
+      <obj_property name="ElementShortName">x_imag[0:15][15:0]</obj_property>
+      <obj_property name="ObjectShortName">x_imag[0:15][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/y" type="array">
+      <obj_property name="ElementShortName">y[0:9][15:0]</obj_property>
+      <obj_property name="ObjectShortName">y[0:9][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/y_imag" type="array">
+      <obj_property name="ElementShortName">y_imag[0:9][15:0]</obj_property>
+      <obj_property name="ObjectShortName">y_imag[0:9][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/NN_unit/w1" type="array">
+      <obj_property name="ElementShortName">w1[0:19][0:63][15:0]</obj_property>
+      <obj_property name="ObjectShortName">w1[0:19][0:63][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/NN_unit/w1_i" type="array">
+      <obj_property name="ElementShortName">w1_i[0:19][0:63][15:0]</obj_property>
+      <obj_property name="ObjectShortName">w1_i[0:19][0:63][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/NN_unit/b1" type="array">
+      <obj_property name="ElementShortName">b1[0:19][15:0]</obj_property>
+      <obj_property name="ObjectShortName">b1[0:19][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/NN_unit/b1_i" type="array">
+      <obj_property name="ElementShortName">b1_i[0:19][15:0]</obj_property>
+      <obj_property name="ObjectShortName">b1_i[0:19][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real" type="array">
+      <obj_property name="ElementShortName">mult_sum_1_real[0:19][0:7][15:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_sum_1_real[0:19][0:7][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[0]" type="array">
+         <obj_property name="ElementShortName">[0][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[1]" type="array">
+         <obj_property name="ElementShortName">[1][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[2]" type="array">
+         <obj_property name="ElementShortName">[2][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[3]" type="array">
+         <obj_property name="ElementShortName">[3][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[4]" type="array">
+         <obj_property name="ElementShortName">[4][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[5]" type="array">
+         <obj_property name="ElementShortName">[5][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[6]" type="array">
+         <obj_property name="ElementShortName">[6][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[7]" type="array">
+         <obj_property name="ElementShortName">[7][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[8]" type="array">
+         <obj_property name="ElementShortName">[8][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[9]" type="array">
+         <obj_property name="ElementShortName">[9][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[10]" type="array">
+         <obj_property name="ElementShortName">[10][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[11]" type="array">
+         <obj_property name="ElementShortName">[11][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[12]" type="array">
+         <obj_property name="ElementShortName">[12][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[13]" type="array">
+         <obj_property name="ElementShortName">[13][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[14]" type="array">
+         <obj_property name="ElementShortName">[14][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[15]" type="array">
+         <obj_property name="ElementShortName">[15][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[16]" type="array">
+         <obj_property name="ElementShortName">[16][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[17]" type="array">
+         <obj_property name="ElementShortName">[17][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[18]" type="array">
+         <obj_property name="ElementShortName">[18][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[19]" type="array">
+         <obj_property name="ElementShortName">[19][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][0:7][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">8</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[0]" type="array">
+         <obj_property name="ElementShortName">[0][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[1]" type="array">
+         <obj_property name="ElementShortName">[1][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[2]" type="array">
+         <obj_property name="ElementShortName">[2][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[3]" type="array">
+         <obj_property name="ElementShortName">[3][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[4]" type="array">
+         <obj_property name="ElementShortName">[4][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[5]" type="array">
+         <obj_property name="ElementShortName">[5][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[6]" type="array">
+         <obj_property name="ElementShortName">[6][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[7]" type="array">
+         <obj_property name="ElementShortName">[7][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[8]" type="array">
+         <obj_property name="ElementShortName">[8][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[9]" type="array">
+         <obj_property name="ElementShortName">[9][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[10]" type="array">
+         <obj_property name="ElementShortName">[10][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[11]" type="array">
+         <obj_property name="ElementShortName">[11][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[12]" type="array">
+         <obj_property name="ElementShortName">[12][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[13]" type="array">
+         <obj_property name="ElementShortName">[13][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[14]" type="array">
+         <obj_property name="ElementShortName">[14][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[15]" type="array">
+         <obj_property name="ElementShortName">[15][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[16]" type="array">
+         <obj_property name="ElementShortName">[16][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[17]" type="array">
+         <obj_property name="ElementShortName">[17][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[18]" type="array">
+         <obj_property name="ElementShortName">[18][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][0:7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_real[19]" type="array">
+         <obj_property name="ElementShortName">[19][0:7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][0:7][15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/NN_unit/mult_sum_1_imag" type="array">
+      <obj_property name="ElementShortName">mult_sum_1_imag[0:19][0:7][15:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_sum_1_imag[0:19][0:7][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/NN_unit/mult_sum_batch_1_real" type="array">
+      <obj_property name="ElementShortName">mult_sum_batch_1_real[0:19][15:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_sum_batch_1_real[0:19][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/NN_unit/mult_sum_batch_1_imag" type="array">
+      <obj_property name="ElementShortName">mult_sum_batch_1_imag[0:19][15:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_sum_batch_1_imag[0:19][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/CLK_Out" type="other">
+      <obj_property name="ElementShortName">CLK_Out</obj_property>
+      <obj_property name="ObjectShortName">CLK_Out</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/first_clk_out" type="other">
+      <obj_property name="ElementShortName">first_clk_out</obj_property>
+      <obj_property name="ObjectShortName">first_clk_out</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/Predicted_Class" type="other">
+      <obj_property name="ElementShortName">Predicted_Class</obj_property>
+      <obj_property name="ObjectShortName">Predicted_Class</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/NN_unit/final_xw_b_real" type="array">
+      <obj_property name="ElementShortName">final_xw_b_real[0:19][15:0]</obj_property>
+      <obj_property name="ObjectShortName">final_xw_b_real[0:19][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nn_tb/NN_unit/final_xw_b_imag" type="array">
+      <obj_property name="ElementShortName">final_xw_b_imag[0:19][15:0]</obj_property>
+      <obj_property name="ObjectShortName">final_xw_b_imag[0:19][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+</wave_config>

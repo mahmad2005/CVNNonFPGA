@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../scratch_2.srcs/sources_1/new/nn_package.vhd" \
+"../../../../scratch_2.srcs/sources_1/new/adder.vhd" \
+"../../../../scratch_2.srcs/sources_1/new/main.vhd" \
+"../../../../scratch_2.srcs/sources_1/new/mult_complex.vhd" \
+"../../../../scratch_2.srcs/sources_1/new/n_output.vhd" \
+"../../../../scratch_2.srcs/sources_1/new/tansig.vhd" \
+"../../../../scratch_2.srcs/sources_1/new/nn_tb.vhd" \
+
+# Do not sort compile order
+nosort

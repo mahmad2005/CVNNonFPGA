@@ -1,0 +1,10 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/128_RVNN/RVNN_Stratch_1.srcs/sources_1/new/main.vhd,1698147006,vhdl,,,,main,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/128_RVNN/RVNN_Stratch_1.srcs/sources_1/new/mult.vhd,1695442151,vhdl,,,,mult,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/128_RVNN/RVNN_Stratch_1.srcs/sources_1/new/n_output.vhd,1695457107,vhdl,,,,n_output,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/128_RVNN/RVNN_Stratch_1.srcs/sources_1/new/nn_package.vhd,1697842137,vhdl,E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/128_RVNN/RVNN_Stratch_1.srcs/sources_1/new/main.vhd,,,nn_package,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/128_RVNN/RVNN_Stratch_1.srcs/sources_1/new/nn_tb.vhd,1695458216,vhdl,,,,nn_tb,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/128_RVNN/RVNN_Stratch_1.srcs/sources_1/new/reluAct.vhd,1695454833,vhdl,,,,reluact,,,,,,,,

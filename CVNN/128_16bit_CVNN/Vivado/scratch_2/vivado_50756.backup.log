@@ -1,0 +1,156 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Sep 23 22:10:15 2023
+# Process ID: 50756
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36184 E:\FPGAProject\01102022\FPGAResearch\Z_Fresh\Z_Final\FPGA_Implementation\CVNN_Imp\128_16bit_CVNN\Vivado\scratch_2\scratch_2.xpr
+# Log file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2'
+INFO: [Project 1-313] Project file moved from 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/CVNN/Vivado/Vivado/scratch_2' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.gen/sources_1', nor could it be found using path 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/CVNN/Vivado/Vivado/scratch_2/scratch_2.gen/sources_1'.
+WARNING: [Project 1-312] File not found as 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_1/nn_tb_behav.wcfg'; using path 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/CVNN/Vivado/Vivado/scratch_1/nn_tb_behav.wcfg' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1283.043 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'nn_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'nn_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj nn_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/sources_1/new/nn_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/sources_1/new/adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/sources_1/new/mult_complex.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult_complex'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/sources_1/new/n_output.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'n_output'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/sources_1/new/tansig.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tansig'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/sources_1/new/nn_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nn_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.sim/sim_1/behav/xsim'
+"xelab -wto 80237420594e4b2daacdb2500e0586da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot nn_tb_behav xil_defaultlib.nn_tb -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 80237420594e4b2daacdb2500e0586da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot nn_tb_behav xil_defaultlib.nn_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.nn_package
+Compiling architecture behavioral of entity xil_defaultlib.mult_complex [mult_complex_default]
+Compiling architecture behavioral of entity xil_defaultlib.tansig [tansig_default]
+Compiling architecture behavioral of entity xil_defaultlib.adder [adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.n_output [n_output_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.nn_tb
+Built simulation snapshot nn_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:39 . Memory (MB): peak = 4067.469 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '39' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "nn_tb_behav -key {Behavioral:sim_1:Functional:nn_tb} -tclbatch {nn_tb.tcl} -view {E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/CVNN/Vivado/Vivado/scratch_1/nn_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/CVNN/Vivado/Vivado/scratch_1/nn_tb_behav.wcfg
+source nn_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 4067.469 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'nn_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:48 . Memory (MB): peak = 4067.469 ; gain = 0.000
+save_wave_config {E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/CVNN/Vivado/Vivado/scratch_1/nn_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 4067.469 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'nn_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'nn_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj nn_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.sim/sim_1/behav/xsim'
+"xelab -wto 80237420594e4b2daacdb2500e0586da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot nn_tb_behav xil_defaultlib.nn_tb -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 80237420594e4b2daacdb2500e0586da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot nn_tb_behav xil_defaultlib.nn_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "nn_tb_behav -key {Behavioral:sim_1:Functional:nn_tb} -tclbatch {nn_tb.tcl} -view {E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/CVNN/Vivado/Vivado/scratch_1/nn_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/CVNN/Vivado/Vivado/scratch_1/nn_tb_behav.wcfg
+source nn_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 4067.469 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'nn_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 4067.469 ; gain = 0.000
+run 200 us
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 4067.469 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 4156.930 ; gain = 89.461
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 23 22:15:33 2023...

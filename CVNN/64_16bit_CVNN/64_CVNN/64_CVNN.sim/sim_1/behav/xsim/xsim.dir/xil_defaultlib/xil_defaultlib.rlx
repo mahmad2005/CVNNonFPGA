@@ -1,0 +1,11 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/64_CVNN.srcs/sources_1/new/adder.vhd,1695511208,vhdl,,,,adder,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/64_CVNN.srcs/sources_1/new/main.vhd,1697941425,vhdl,,,,main,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/64_CVNN.srcs/sources_1/new/mult_complex.vhd,1695511283,vhdl,,,,mult_complex,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/64_CVNN.srcs/sources_1/new/n_output.vhd,1695511377,vhdl,,,,n_output,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/64_CVNN.srcs/sources_1/new/nn_package.vhd,1697837162,vhdl,E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/64_CVNN.srcs/sources_1/new/main.vhd,,,nn_package,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/64_CVNN.srcs/sources_1/new/nn_tb.vhd,1695511793,vhdl,,,,nn_tb,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/64_CVNN.srcs/sources_1/new/reluAct.vhd,1695511491,vhdl,,,,reluact,,,,,,,,

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Oct 20 13:02:56 2023
+# Process ID: 29076
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33880 E:\FPGAProject\01102022\FPGAResearch\Z_Fresh\Z_Final\FPGA_Implementation\Pipelined_8_Input\CVNN\64_16bit_CVNN\64_CVNN\64_CVNN.xpr
+# Log file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/64_CVNN.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN'
+INFO: [Project 1-313] Project file moved from 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/64_16bit_CVNN/64_CVNN' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/64_CVNN.gen/sources_1', nor could it be found using path 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/64_16bit_CVNN/64_CVNN/64_CVNN.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1258.086 ; gain = 0.000
+update_compile_order -fileset sources_1

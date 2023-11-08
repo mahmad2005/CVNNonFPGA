@@ -1,0 +1,649 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date             : Fri Oct 20 22:25:44 2023
+| Host             : DESKTOP-1FT5C23 running 64-bit major release  (build 9200)
+| Command          : report_power -file main_power_routed.rpt -pb main_power_summary_routed.pb -rpx main_power_routed.rpx
+| Design           : main
+| Device           : xc7vx485tffg1761-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 1.585        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 1.333        |
+| Device Static (W)        | 0.252        |
+| Effective TJA (C/W)      | 1.1          |
+| Max Ambient (C)          | 83.2         |
+| Junction Temperature (C) | 26.8         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Clocks         |     0.034 |        3 |       --- |             --- |
+| Slice Logic    |     0.205 |    19288 |       --- |             --- |
+|   LUT as Logic |     0.185 |     9124 |    303600 |            3.01 |
+|   CARRY4       |     0.016 |     1773 |     75900 |            2.34 |
+|   Register     |     0.004 |     3110 |    607200 |            0.51 |
+|   Others       |     0.000 |     2016 |       --- |             --- |
+| Signals        |     0.316 |    22157 |       --- |             --- |
+| DSPs           |     0.641 |      485 |      2800 |           17.32 |
+| I/O            |     0.136 |      417 |       700 |           59.57 |
+| Static Power   |     0.252 |          |           |                 |
+| Total          |     1.585 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |     1.341 |       1.198 |      0.143 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.049 |       0.011 |      0.038 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.065 |       0.064 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.003 |       0.000 |      0.003 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTZVccl  |       1.075 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTZAVcc  |       1.075 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTZVcch  |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.1                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 2.2                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+| clk   | clk    |             8.0 |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++---------------------------------------+-----------+
+| Name                                  | Power (W) |
++---------------------------------------+-----------+
+| main                                  |     1.333 |
+|   L2GEN[0].output_unit                |     0.060 |
+|     multgen[0].mult_unit              |     0.003 |
+|     multgen[10].mult_unit             |     0.003 |
+|     multgen[11].mult_unit             |     0.003 |
+|     multgen[12].mult_unit             |     0.003 |
+|     multgen[13].mult_unit             |     0.002 |
+|     multgen[14].mult_unit             |     0.003 |
+|     multgen[15].mult_unit             |     0.002 |
+|     multgen[16].mult_unit             |     0.003 |
+|     multgen[17].mult_unit             |     0.003 |
+|     multgen[19].mult_unit             |     0.003 |
+|     multgen[1].mult_unit              |     0.003 |
+|     multgen[2].mult_unit              |     0.003 |
+|     multgen[3].mult_unit              |     0.003 |
+|     multgen[4].mult_unit              |     0.003 |
+|     multgen[5].mult_unit              |     0.002 |
+|     multgen[6].mult_unit              |     0.003 |
+|     multgen[8].mult_unit              |     0.003 |
+|     multgen[9].mult_unit              |     0.003 |
+|   L2GEN[1].output_unit                |     0.036 |
+|     multgen[0].mult_unit              |     0.001 |
+|     multgen[10].mult_unit             |     0.002 |
+|     multgen[13].mult_unit             |     0.002 |
+|     multgen[14].mult_unit             |     0.002 |
+|     multgen[15].mult_unit             |     0.002 |
+|     multgen[17].mult_unit             |     0.001 |
+|     multgen[18].mult_unit             |     0.003 |
+|     multgen[19].mult_unit             |     0.001 |
+|     multgen[1].mult_unit              |     0.002 |
+|     multgen[2].mult_unit              |     0.002 |
+|     multgen[3].mult_unit              |     0.002 |
+|     multgen[4].mult_unit              |     0.002 |
+|     multgen[6].mult_unit              |     0.002 |
+|     multgen[7].mult_unit              |     0.003 |
+|     multgen[8].mult_unit              |     0.002 |
+|   L2GEN[2].output_unit                |     0.037 |
+|     multgen[10].mult_unit             |     0.002 |
+|     multgen[11].mult_unit             |     0.002 |
+|     multgen[12].mult_unit             |     0.001 |
+|     multgen[13].mult_unit             |     0.002 |
+|     multgen[15].mult_unit             |     0.002 |
+|     multgen[16].mult_unit             |     0.001 |
+|     multgen[17].mult_unit             |     0.002 |
+|     multgen[18].mult_unit             |     0.001 |
+|     multgen[19].mult_unit             |     0.002 |
+|     multgen[2].mult_unit              |     0.002 |
+|     multgen[3].mult_unit              |     0.002 |
+|     multgen[4].mult_unit              |     0.002 |
+|     multgen[5].mult_unit              |     0.002 |
+|     multgen[6].mult_unit              |     0.002 |
+|     multgen[7].mult_unit              |     0.001 |
+|     multgen[9].mult_unit              |     0.001 |
+|   L2GEN[3].output_unit                |     0.036 |
+|     multgen[0].mult_unit              |     0.002 |
+|     multgen[10].mult_unit             |     0.002 |
+|     multgen[11].mult_unit             |     0.001 |
+|     multgen[12].mult_unit             |     0.002 |
+|     multgen[13].mult_unit             |     0.002 |
+|     multgen[14].mult_unit             |     0.002 |
+|     multgen[15].mult_unit             |     0.002 |
+|     multgen[16].mult_unit             |     0.002 |
+|     multgen[17].mult_unit             |     0.002 |
+|     multgen[18].mult_unit             |     0.002 |
+|     multgen[1].mult_unit              |     0.002 |
+|     multgen[2].mult_unit              |     0.002 |
+|     multgen[3].mult_unit              |     0.002 |
+|     multgen[6].mult_unit              |     0.001 |
+|     multgen[8].mult_unit              |     0.002 |
+|   L2GEN[4].output_unit                |     0.040 |
+|     multgen[0].mult_unit              |     0.002 |
+|     multgen[10].mult_unit             |     0.002 |
+|     multgen[11].mult_unit             |     0.002 |
+|     multgen[14].mult_unit             |     0.002 |
+|     multgen[15].mult_unit             |     0.001 |
+|     multgen[16].mult_unit             |     0.001 |
+|     multgen[17].mult_unit             |     0.002 |
+|     multgen[18].mult_unit             |     0.002 |
+|     multgen[19].mult_unit             |     0.002 |
+|     multgen[1].mult_unit              |     0.001 |
+|     multgen[2].mult_unit              |     0.002 |
+|     multgen[3].mult_unit              |     0.002 |
+|     multgen[4].mult_unit              |     0.001 |
+|     multgen[5].mult_unit              |     0.002 |
+|     multgen[6].mult_unit              |     0.002 |
+|     multgen[7].mult_unit              |     0.002 |
+|     multgen[8].mult_unit              |     0.002 |
+|     multgen[9].mult_unit              |     0.002 |
+|   L2GEN[5].output_unit                |     0.032 |
+|     multgen[10].mult_unit             |     0.001 |
+|     multgen[13].mult_unit             |     0.002 |
+|     multgen[14].mult_unit             |     0.002 |
+|     multgen[16].mult_unit             |     0.002 |
+|     multgen[19].mult_unit             |     0.002 |
+|     multgen[1].mult_unit              |     0.002 |
+|     multgen[2].mult_unit              |     0.001 |
+|     multgen[4].mult_unit              |     0.001 |
+|     multgen[5].mult_unit              |     0.001 |
+|     multgen[6].mult_unit              |     0.002 |
+|     multgen[7].mult_unit              |     0.002 |
+|     multgen[8].mult_unit              |     0.002 |
+|     multgen[9].mult_unit              |     0.002 |
+|   L2GEN[6].output_unit                |     0.041 |
+|     multgen[0].mult_unit              |     0.001 |
+|     multgen[10].mult_unit             |     0.001 |
+|     multgen[11].mult_unit             |     0.002 |
+|     multgen[12].mult_unit             |     0.002 |
+|     multgen[13].mult_unit             |     0.001 |
+|     multgen[14].mult_unit             |     0.001 |
+|     multgen[15].mult_unit             |     0.002 |
+|     multgen[16].mult_unit             |     0.002 |
+|     multgen[17].mult_unit             |     0.002 |
+|     multgen[18].mult_unit             |     0.002 |
+|     multgen[19].mult_unit             |     0.002 |
+|     multgen[2].mult_unit              |     0.002 |
+|     multgen[3].mult_unit              |     0.002 |
+|     multgen[4].mult_unit              |     0.002 |
+|     multgen[5].mult_unit              |     0.002 |
+|     multgen[6].mult_unit              |     0.002 |
+|     multgen[7].mult_unit              |     0.001 |
+|     multgen[8].mult_unit              |     0.002 |
+|     multgen[9].mult_unit              |     0.002 |
+|   L2GEN[7].output_unit                |     0.033 |
+|     multgen[0].mult_unit              |     0.002 |
+|     multgen[10].mult_unit             |     0.002 |
+|     multgen[11].mult_unit             |     0.001 |
+|     multgen[12].mult_unit             |     0.002 |
+|     multgen[13].mult_unit             |     0.001 |
+|     multgen[14].mult_unit             |     0.002 |
+|     multgen[15].mult_unit             |     0.001 |
+|     multgen[17].mult_unit             |     0.002 |
+|     multgen[1].mult_unit              |     0.001 |
+|     multgen[3].mult_unit              |     0.001 |
+|     multgen[4].mult_unit              |     0.001 |
+|     multgen[5].mult_unit              |     0.001 |
+|     multgen[6].mult_unit              |     0.002 |
+|     multgen[7].mult_unit              |     0.002 |
+|     multgen[8].mult_unit              |     0.001 |
+|     multgen[9].mult_unit              |     0.001 |
+|   L2GEN[8].output_unit                |     0.038 |
+|     multgen[0].mult_unit              |     0.001 |
+|     multgen[10].mult_unit             |     0.002 |
+|     multgen[11].mult_unit             |     0.002 |
+|     multgen[12].mult_unit             |     0.001 |
+|     multgen[13].mult_unit             |     0.002 |
+|     multgen[14].mult_unit             |     0.002 |
+|     multgen[15].mult_unit             |     0.002 |
+|     multgen[16].mult_unit             |     0.002 |
+|     multgen[17].mult_unit             |     0.002 |
+|     multgen[18].mult_unit             |     0.001 |
+|     multgen[1].mult_unit              |     0.002 |
+|     multgen[2].mult_unit              |     0.002 |
+|     multgen[3].mult_unit              |     0.002 |
+|     multgen[4].mult_unit              |     0.002 |
+|     multgen[5].mult_unit              |     0.001 |
+|     multgen[6].mult_unit              |     0.001 |
+|     multgen[7].mult_unit              |     0.002 |
+|     multgen[8].mult_unit              |     0.001 |
+|     multgen[9].mult_unit              |     0.002 |
+|   L2GEN[9].output_unit                |     0.040 |
+|     multgen[0].mult_unit              |     0.002 |
+|     multgen[10].mult_unit             |     0.002 |
+|     multgen[11].mult_unit             |     0.001 |
+|     multgen[12].mult_unit             |     0.002 |
+|     multgen[13].mult_unit             |     0.002 |
+|     multgen[14].mult_unit             |     0.002 |
+|     multgen[15].mult_unit             |     0.002 |
+|     multgen[16].mult_unit             |     0.002 |
+|     multgen[17].mult_unit             |     0.002 |
+|     multgen[18].mult_unit             |     0.002 |
+|     multgen[19].mult_unit             |     0.002 |
+|     multgen[1].mult_unit              |     0.002 |
+|     multgen[2].mult_unit              |     0.002 |
+|     multgen[4].mult_unit              |     0.002 |
+|     multgen[5].mult_unit              |     0.002 |
+|     multgen[6].mult_unit              |     0.002 |
+|     multgen[7].mult_unit              |     0.002 |
+|     multgen[8].mult_unit              |     0.002 |
+|     multgen[9].mult_unit              |     0.002 |
+|   multgen_L[0].multgen[0].mult_unit   |     0.002 |
+|   multgen_L[0].multgen[10].mult_unit  |     0.002 |
+|   multgen_L[0].multgen[11].mult_unit  |     0.002 |
+|   multgen_L[0].multgen[12].mult_unit  |     0.002 |
+|   multgen_L[0].multgen[13].mult_unit  |     0.003 |
+|   multgen_L[0].multgen[14].mult_unit  |     0.002 |
+|   multgen_L[0].multgen[15].mult_unit  |     0.003 |
+|   multgen_L[0].multgen[1].mult_unit   |     0.001 |
+|   multgen_L[0].multgen[2].mult_unit   |     0.001 |
+|   multgen_L[0].multgen[3].mult_unit   |     0.002 |
+|   multgen_L[0].multgen[4].mult_unit   |     0.002 |
+|   multgen_L[0].multgen[5].mult_unit   |     0.002 |
+|   multgen_L[0].multgen[6].mult_unit   |     0.002 |
+|   multgen_L[0].multgen[7].mult_unit   |     0.003 |
+|   multgen_L[0].multgen[8].mult_unit   |     0.001 |
+|   multgen_L[0].multgen[9].mult_unit   |     0.005 |
+|   multgen_L[10].multgen[0].mult_unit  |     0.001 |
+|   multgen_L[10].multgen[10].mult_unit |     0.002 |
+|   multgen_L[10].multgen[11].mult_unit |     0.002 |
+|   multgen_L[10].multgen[12].mult_unit |     0.002 |
+|   multgen_L[10].multgen[13].mult_unit |     0.003 |
+|   multgen_L[10].multgen[14].mult_unit |     0.002 |
+|   multgen_L[10].multgen[15].mult_unit |     0.003 |
+|   multgen_L[10].multgen[1].mult_unit  |     0.001 |
+|   multgen_L[10].multgen[2].mult_unit  |     0.001 |
+|   multgen_L[10].multgen[3].mult_unit  |     0.002 |
+|   multgen_L[10].multgen[4].mult_unit  |     0.002 |
+|   multgen_L[10].multgen[5].mult_unit  |     0.002 |
+|   multgen_L[10].multgen[6].mult_unit  |     0.002 |
+|   multgen_L[10].multgen[7].mult_unit  |     0.003 |
+|   multgen_L[10].multgen[8].mult_unit  |     0.002 |
+|   multgen_L[10].multgen[9].mult_unit  |     0.005 |
+|   multgen_L[11].multgen[0].mult_unit  |     0.001 |
+|   multgen_L[11].multgen[10].mult_unit |     0.002 |
+|   multgen_L[11].multgen[11].mult_unit |     0.002 |
+|   multgen_L[11].multgen[12].mult_unit |     0.002 |
+|   multgen_L[11].multgen[13].mult_unit |     0.002 |
+|   multgen_L[11].multgen[14].mult_unit |     0.002 |
+|   multgen_L[11].multgen[15].mult_unit |     0.003 |
+|   multgen_L[11].multgen[1].mult_unit  |     0.001 |
+|   multgen_L[11].multgen[2].mult_unit  |     0.001 |
+|   multgen_L[11].multgen[3].mult_unit  |     0.002 |
+|   multgen_L[11].multgen[4].mult_unit  |     0.002 |
+|   multgen_L[11].multgen[5].mult_unit  |     0.002 |
+|   multgen_L[11].multgen[6].mult_unit  |     0.002 |
+|   multgen_L[11].multgen[7].mult_unit  |     0.003 |
+|   multgen_L[11].multgen[8].mult_unit  |     0.002 |
+|   multgen_L[11].multgen[9].mult_unit  |     0.005 |
+|   multgen_L[12].multgen[0].mult_unit  |     0.002 |
+|   multgen_L[12].multgen[10].mult_unit |     0.002 |
+|   multgen_L[12].multgen[11].mult_unit |     0.002 |
+|   multgen_L[12].multgen[12].mult_unit |     0.002 |
+|   multgen_L[12].multgen[13].mult_unit |     0.003 |
+|   multgen_L[12].multgen[14].mult_unit |     0.002 |
+|   multgen_L[12].multgen[15].mult_unit |     0.003 |
+|   multgen_L[12].multgen[1].mult_unit  |     0.002 |
+|   multgen_L[12].multgen[2].mult_unit  |     0.002 |
+|   multgen_L[12].multgen[3].mult_unit  |     0.002 |
+|   multgen_L[12].multgen[4].mult_unit  |     0.002 |
+|   multgen_L[12].multgen[5].mult_unit  |     0.002 |
+|   multgen_L[12].multgen[6].mult_unit  |     0.002 |
+|   multgen_L[12].multgen[7].mult_unit  |     0.003 |
+|   multgen_L[12].multgen[8].mult_unit  |     0.002 |
+|   multgen_L[12].multgen[9].mult_unit  |     0.005 |
+|   multgen_L[13].multgen[0].mult_unit  |     0.001 |
+|   multgen_L[13].multgen[10].mult_unit |     0.002 |
+|   multgen_L[13].multgen[11].mult_unit |     0.002 |
+|   multgen_L[13].multgen[12].mult_unit |     0.002 |
+|   multgen_L[13].multgen[13].mult_unit |     0.003 |
+|   multgen_L[13].multgen[14].mult_unit |     0.002 |
+|   multgen_L[13].multgen[15].mult_unit |     0.003 |
+|   multgen_L[13].multgen[1].mult_unit  |     0.001 |
+|   multgen_L[13].multgen[2].mult_unit  |     0.002 |
+|   multgen_L[13].multgen[3].mult_unit  |     0.003 |
+|   multgen_L[13].multgen[4].mult_unit  |     0.002 |
+|   multgen_L[13].multgen[5].mult_unit  |     0.002 |
+|   multgen_L[13].multgen[6].mult_unit  |     0.002 |
+|   multgen_L[13].multgen[7].mult_unit  |     0.003 |
+|   multgen_L[13].multgen[8].mult_unit  |     0.002 |
+|   multgen_L[13].multgen[9].mult_unit  |     0.005 |
+|   multgen_L[14].multgen[0].mult_unit  |     0.001 |
+|   multgen_L[14].multgen[10].mult_unit |     0.002 |
+|   multgen_L[14].multgen[11].mult_unit |     0.002 |
+|   multgen_L[14].multgen[12].mult_unit |     0.002 |
+|   multgen_L[14].multgen[13].mult_unit |     0.003 |
+|   multgen_L[14].multgen[14].mult_unit |     0.002 |
+|   multgen_L[14].multgen[15].mult_unit |     0.003 |
+|   multgen_L[14].multgen[1].mult_unit  |     0.002 |
+|   multgen_L[14].multgen[2].mult_unit  |     0.002 |
+|   multgen_L[14].multgen[3].mult_unit  |     0.002 |
+|   multgen_L[14].multgen[4].mult_unit  |     0.002 |
+|   multgen_L[14].multgen[5].mult_unit  |     0.002 |
+|   multgen_L[14].multgen[6].mult_unit  |     0.002 |
+|   multgen_L[14].multgen[7].mult_unit  |     0.003 |
+|   multgen_L[14].multgen[8].mult_unit  |     0.001 |
+|   multgen_L[14].multgen[9].mult_unit  |     0.004 |
+|   multgen_L[15].multgen[0].mult_unit  |     0.001 |
+|   multgen_L[15].multgen[10].mult_unit |     0.002 |
+|   multgen_L[15].multgen[11].mult_unit |     0.002 |
+|   multgen_L[15].multgen[12].mult_unit |     0.002 |
+|   multgen_L[15].multgen[13].mult_unit |     0.003 |
+|   multgen_L[15].multgen[14].mult_unit |     0.002 |
+|   multgen_L[15].multgen[15].mult_unit |     0.003 |
+|   multgen_L[15].multgen[1].mult_unit  |     0.001 |
+|   multgen_L[15].multgen[2].mult_unit  |     0.001 |
+|   multgen_L[15].multgen[3].mult_unit  |     0.002 |
+|   multgen_L[15].multgen[4].mult_unit  |     0.002 |
+|   multgen_L[15].multgen[5].mult_unit  |     0.002 |
+|   multgen_L[15].multgen[6].mult_unit  |     0.002 |
+|   multgen_L[15].multgen[7].mult_unit  |     0.003 |
+|   multgen_L[15].multgen[8].mult_unit  |     0.001 |
+|   multgen_L[15].multgen[9].mult_unit  |     0.005 |
+|   multgen_L[16].multgen[0].mult_unit  |     0.002 |
+|   multgen_L[16].multgen[10].mult_unit |     0.002 |
+|   multgen_L[16].multgen[11].mult_unit |     0.002 |
+|   multgen_L[16].multgen[12].mult_unit |     0.002 |
+|   multgen_L[16].multgen[13].mult_unit |     0.003 |
+|   multgen_L[16].multgen[14].mult_unit |     0.002 |
+|   multgen_L[16].multgen[15].mult_unit |     0.003 |
+|   multgen_L[16].multgen[1].mult_unit  |     0.001 |
+|   multgen_L[16].multgen[2].mult_unit  |     0.002 |
+|   multgen_L[16].multgen[3].mult_unit  |     0.002 |
+|   multgen_L[16].multgen[4].mult_unit  |     0.002 |
+|   multgen_L[16].multgen[5].mult_unit  |     0.002 |
+|   multgen_L[16].multgen[6].mult_unit  |     0.002 |
+|   multgen_L[16].multgen[7].mult_unit  |     0.003 |
+|   multgen_L[16].multgen[8].mult_unit  |     0.002 |
+|   multgen_L[16].multgen[9].mult_unit  |     0.005 |
+|   multgen_L[17].multgen[0].mult_unit  |     0.001 |
+|   multgen_L[17].multgen[10].mult_unit |     0.002 |
+|   multgen_L[17].multgen[11].mult_unit |     0.002 |
+|   multgen_L[17].multgen[12].mult_unit |     0.002 |
+|   multgen_L[17].multgen[13].mult_unit |     0.003 |
+|   multgen_L[17].multgen[14].mult_unit |     0.002 |
+|   multgen_L[17].multgen[15].mult_unit |     0.003 |
+|   multgen_L[17].multgen[1].mult_unit  |     0.002 |
+|   multgen_L[17].multgen[2].mult_unit  |     0.001 |
+|   multgen_L[17].multgen[3].mult_unit  |     0.002 |
+|   multgen_L[17].multgen[4].mult_unit  |     0.002 |
+|   multgen_L[17].multgen[5].mult_unit  |     0.002 |
+|   multgen_L[17].multgen[6].mult_unit  |     0.002 |
+|   multgen_L[17].multgen[7].mult_unit  |     0.003 |
+|   multgen_L[17].multgen[8].mult_unit  |     0.001 |
+|   multgen_L[17].multgen[9].mult_unit  |     0.005 |
+|   multgen_L[18].multgen[0].mult_unit  |     0.001 |
+|   multgen_L[18].multgen[10].mult_unit |     0.002 |
+|   multgen_L[18].multgen[11].mult_unit |     0.002 |
+|   multgen_L[18].multgen[12].mult_unit |     0.002 |
+|   multgen_L[18].multgen[13].mult_unit |     0.003 |
+|   multgen_L[18].multgen[14].mult_unit |     0.002 |
+|   multgen_L[18].multgen[15].mult_unit |     0.003 |
+|   multgen_L[18].multgen[1].mult_unit  |     0.001 |
+|   multgen_L[18].multgen[2].mult_unit  |     0.001 |
+|   multgen_L[18].multgen[3].mult_unit  |     0.002 |
+|   multgen_L[18].multgen[4].mult_unit  |     0.002 |
+|   multgen_L[18].multgen[5].mult_unit  |     0.002 |
+|   multgen_L[18].multgen[6].mult_unit  |     0.002 |
+|   multgen_L[18].multgen[7].mult_unit  |     0.003 |
+|   multgen_L[18].multgen[8].mult_unit  |     0.001 |
+|   multgen_L[18].multgen[9].mult_unit  |     0.005 |
+|   multgen_L[19].multgen[0].mult_unit  |     0.001 |
+|   multgen_L[19].multgen[10].mult_unit |     0.002 |
+|   multgen_L[19].multgen[11].mult_unit |     0.002 |
+|   multgen_L[19].multgen[12].mult_unit |     0.002 |
+|   multgen_L[19].multgen[13].mult_unit |     0.003 |
+|   multgen_L[19].multgen[14].mult_unit |     0.002 |
+|   multgen_L[19].multgen[15].mult_unit |     0.003 |
+|   multgen_L[19].multgen[1].mult_unit  |     0.001 |
+|   multgen_L[19].multgen[2].mult_unit  |     0.002 |
+|   multgen_L[19].multgen[3].mult_unit  |     0.002 |
+|   multgen_L[19].multgen[4].mult_unit  |     0.002 |
+|   multgen_L[19].multgen[5].mult_unit  |     0.002 |
+|   multgen_L[19].multgen[6].mult_unit  |     0.002 |
+|   multgen_L[19].multgen[7].mult_unit  |     0.003 |
+|   multgen_L[19].multgen[8].mult_unit  |     0.001 |
+|   multgen_L[19].multgen[9].mult_unit  |     0.005 |
+|   multgen_L[1].multgen[0].mult_unit   |     0.002 |
+|   multgen_L[1].multgen[10].mult_unit  |     0.002 |
+|   multgen_L[1].multgen[11].mult_unit  |     0.002 |
+|   multgen_L[1].multgen[12].mult_unit  |     0.002 |
+|   multgen_L[1].multgen[13].mult_unit  |     0.003 |
+|   multgen_L[1].multgen[14].mult_unit  |     0.002 |
+|   multgen_L[1].multgen[15].mult_unit  |     0.003 |
+|   multgen_L[1].multgen[1].mult_unit   |     0.001 |
+|   multgen_L[1].multgen[2].mult_unit   |     0.002 |
+|   multgen_L[1].multgen[3].mult_unit   |     0.002 |
+|   multgen_L[1].multgen[4].mult_unit   |     0.002 |
+|   multgen_L[1].multgen[5].mult_unit   |     0.002 |
+|   multgen_L[1].multgen[6].mult_unit   |     0.002 |
+|   multgen_L[1].multgen[7].mult_unit   |     0.003 |
+|   multgen_L[1].multgen[8].mult_unit   |     0.001 |
+|   multgen_L[1].multgen[9].mult_unit   |     0.005 |
+|   multgen_L[2].multgen[0].mult_unit   |     0.002 |
+|   multgen_L[2].multgen[10].mult_unit  |     0.002 |
+|   multgen_L[2].multgen[11].mult_unit  |     0.002 |
+|   multgen_L[2].multgen[12].mult_unit  |     0.002 |
+|   multgen_L[2].multgen[13].mult_unit  |     0.003 |
+|   multgen_L[2].multgen[14].mult_unit  |     0.002 |
+|   multgen_L[2].multgen[15].mult_unit  |     0.003 |
+|   multgen_L[2].multgen[1].mult_unit   |     0.001 |
+|   multgen_L[2].multgen[2].mult_unit   |     0.002 |
+|   multgen_L[2].multgen[3].mult_unit   |     0.002 |
+|   multgen_L[2].multgen[4].mult_unit   |     0.002 |
+|   multgen_L[2].multgen[5].mult_unit   |     0.002 |
+|   multgen_L[2].multgen[6].mult_unit   |     0.002 |
+|   multgen_L[2].multgen[7].mult_unit   |     0.003 |
+|   multgen_L[2].multgen[8].mult_unit   |     0.002 |
+|   multgen_L[2].multgen[9].mult_unit   |     0.005 |
+|   multgen_L[3].multgen[0].mult_unit   |     0.001 |
+|   multgen_L[3].multgen[10].mult_unit  |     0.002 |
+|   multgen_L[3].multgen[11].mult_unit  |     0.002 |
+|   multgen_L[3].multgen[12].mult_unit  |     0.002 |
+|   multgen_L[3].multgen[13].mult_unit  |     0.003 |
+|   multgen_L[3].multgen[14].mult_unit  |     0.002 |
+|   multgen_L[3].multgen[15].mult_unit  |     0.003 |
+|   multgen_L[3].multgen[1].mult_unit   |     0.001 |
+|   multgen_L[3].multgen[2].mult_unit   |     0.002 |
+|   multgen_L[3].multgen[3].mult_unit   |     0.002 |
+|   multgen_L[3].multgen[4].mult_unit   |     0.002 |
+|   multgen_L[3].multgen[5].mult_unit   |     0.002 |
+|   multgen_L[3].multgen[6].mult_unit   |     0.002 |
+|   multgen_L[3].multgen[7].mult_unit   |     0.003 |
+|   multgen_L[3].multgen[8].mult_unit   |     0.001 |
+|   multgen_L[3].multgen[9].mult_unit   |     0.005 |
+|   multgen_L[4].multgen[0].mult_unit   |     0.001 |
+|   multgen_L[4].multgen[10].mult_unit  |     0.002 |
+|   multgen_L[4].multgen[11].mult_unit  |     0.002 |
+|   multgen_L[4].multgen[12].mult_unit  |     0.002 |
+|   multgen_L[4].multgen[13].mult_unit  |     0.003 |
+|   multgen_L[4].multgen[14].mult_unit  |     0.002 |
+|   multgen_L[4].multgen[15].mult_unit  |     0.003 |
+|   multgen_L[4].multgen[1].mult_unit   |     0.001 |
+|   multgen_L[4].multgen[2].mult_unit   |     0.001 |
+|   multgen_L[4].multgen[3].mult_unit   |     0.002 |
+|   multgen_L[4].multgen[4].mult_unit   |     0.002 |
+|   multgen_L[4].multgen[5].mult_unit   |     0.002 |
+|   multgen_L[4].multgen[6].mult_unit   |     0.002 |
+|   multgen_L[4].multgen[7].mult_unit   |     0.003 |
+|   multgen_L[4].multgen[8].mult_unit   |     0.001 |
+|   multgen_L[4].multgen[9].mult_unit   |     0.004 |
+|   multgen_L[5].multgen[0].mult_unit   |     0.002 |
+|   multgen_L[5].multgen[10].mult_unit  |     0.002 |
+|   multgen_L[5].multgen[11].mult_unit  |     0.002 |
+|   multgen_L[5].multgen[12].mult_unit  |     0.002 |
+|   multgen_L[5].multgen[13].mult_unit  |     0.003 |
+|   multgen_L[5].multgen[14].mult_unit  |     0.002 |
+|   multgen_L[5].multgen[15].mult_unit  |     0.003 |
+|   multgen_L[5].multgen[1].mult_unit   |     0.001 |
+|   multgen_L[5].multgen[2].mult_unit   |     0.001 |
+|   multgen_L[5].multgen[3].mult_unit   |     0.002 |
+|   multgen_L[5].multgen[4].mult_unit   |     0.002 |
+|   multgen_L[5].multgen[5].mult_unit   |     0.002 |
+|   multgen_L[5].multgen[6].mult_unit   |     0.002 |
+|   multgen_L[5].multgen[7].mult_unit   |     0.003 |
+|   multgen_L[5].multgen[8].mult_unit   |     0.001 |
+|   multgen_L[5].multgen[9].mult_unit   |     0.005 |
+|   multgen_L[6].multgen[0].mult_unit   |     0.001 |
+|   multgen_L[6].multgen[10].mult_unit  |     0.002 |
+|   multgen_L[6].multgen[11].mult_unit  |     0.002 |
+|   multgen_L[6].multgen[12].mult_unit  |     0.002 |
+|   multgen_L[6].multgen[13].mult_unit  |     0.003 |
+|   multgen_L[6].multgen[14].mult_unit  |     0.002 |
+|   multgen_L[6].multgen[15].mult_unit  |     0.003 |
+|   multgen_L[6].multgen[1].mult_unit   |     0.001 |
+|   multgen_L[6].multgen[2].mult_unit   |     0.002 |
+|   multgen_L[6].multgen[3].mult_unit   |     0.002 |
+|   multgen_L[6].multgen[4].mult_unit   |     0.002 |
+|   multgen_L[6].multgen[5].mult_unit   |     0.002 |
+|   multgen_L[6].multgen[6].mult_unit   |     0.002 |
+|   multgen_L[6].multgen[7].mult_unit   |     0.003 |
+|   multgen_L[6].multgen[8].mult_unit   |     0.002 |
+|   multgen_L[6].multgen[9].mult_unit   |     0.005 |
+|   multgen_L[7].multgen[0].mult_unit   |     0.001 |
+|   multgen_L[7].multgen[10].mult_unit  |     0.002 |
+|   multgen_L[7].multgen[11].mult_unit  |     0.002 |
+|   multgen_L[7].multgen[12].mult_unit  |     0.002 |
+|   multgen_L[7].multgen[13].mult_unit  |     0.002 |
+|   multgen_L[7].multgen[14].mult_unit  |     0.002 |
+|   multgen_L[7].multgen[15].mult_unit  |     0.003 |
+|   multgen_L[7].multgen[1].mult_unit   |     0.001 |
+|   multgen_L[7].multgen[2].mult_unit   |     0.002 |
+|   multgen_L[7].multgen[3].mult_unit   |     0.002 |
+|   multgen_L[7].multgen[4].mult_unit   |     0.002 |
+|   multgen_L[7].multgen[5].mult_unit   |     0.002 |
+|   multgen_L[7].multgen[6].mult_unit   |     0.002 |
+|   multgen_L[7].multgen[7].mult_unit   |     0.003 |
+|   multgen_L[7].multgen[8].mult_unit   |     0.002 |
+|   multgen_L[7].multgen[9].mult_unit   |     0.005 |
+|   multgen_L[8].multgen[0].mult_unit   |     0.001 |
+|   multgen_L[8].multgen[10].mult_unit  |     0.002 |
+|   multgen_L[8].multgen[11].mult_unit  |     0.002 |
+|   multgen_L[8].multgen[12].mult_unit  |     0.002 |
+|   multgen_L[8].multgen[13].mult_unit  |     0.003 |
+|   multgen_L[8].multgen[14].mult_unit  |     0.002 |
+|   multgen_L[8].multgen[15].mult_unit  |     0.003 |
+|   multgen_L[8].multgen[1].mult_unit   |     0.001 |
+|   multgen_L[8].multgen[2].mult_unit   |     0.002 |
+|   multgen_L[8].multgen[3].mult_unit   |     0.002 |
+|   multgen_L[8].multgen[4].mult_unit   |     0.002 |
+|   multgen_L[8].multgen[5].mult_unit   |     0.002 |
+|   multgen_L[8].multgen[6].mult_unit   |     0.002 |
+|   multgen_L[8].multgen[7].mult_unit   |     0.003 |
+|   multgen_L[8].multgen[8].mult_unit   |     0.001 |
+|   multgen_L[8].multgen[9].mult_unit   |     0.004 |
+|   multgen_L[9].multgen[0].mult_unit   |     0.002 |
+|   multgen_L[9].multgen[10].mult_unit  |     0.002 |
+|   multgen_L[9].multgen[11].mult_unit  |     0.002 |
+|   multgen_L[9].multgen[12].mult_unit  |     0.002 |
+|   multgen_L[9].multgen[13].mult_unit  |     0.003 |
+|   multgen_L[9].multgen[14].mult_unit  |     0.002 |
+|   multgen_L[9].multgen[15].mult_unit  |     0.003 |
+|   multgen_L[9].multgen[1].mult_unit   |     0.001 |
+|   multgen_L[9].multgen[2].mult_unit   |     0.002 |
+|   multgen_L[9].multgen[3].mult_unit   |     0.002 |
+|   multgen_L[9].multgen[4].mult_unit   |     0.002 |
+|   multgen_L[9].multgen[5].mult_unit   |     0.002 |
+|   multgen_L[9].multgen[6].mult_unit   |     0.002 |
+|   multgen_L[9].multgen[7].mult_unit   |     0.003 |
+|   multgen_L[9].multgen[8].mult_unit   |     0.001 |
+|   multgen_L[9].multgen[9].mult_unit   |     0.005 |
++---------------------------------------+-----------+
+
+

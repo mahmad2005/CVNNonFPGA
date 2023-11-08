@@ -1,0 +1,136 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:33 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 33304
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Oct 20 12:51:31 CST 2023
+Time zone: 	Central Standard Time (America/Regina)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2
+Java executable: 	C:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	maruf
+User home directory: C:/Users/maruf
+User working directory: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN
+User country: 	CA
+User language: 	en
+User locale: 	en_CA
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2021.1
+RDI_DATADIR: C:/Xilinx/Vivado/2021.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2021.1/bin
+
+Vivado preferences file: C:/Users/maruf/AppData/Roaming/Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: C:/Users/maruf/AppData/Roaming/Xilinx/Vivado/2021.1/
+Vivado layouts directory: C:/Users/maruf/AppData/Roaming/Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/vivado.log
+Vivado journal file: 	E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/vivado.jou
+Engine tmp dir: 	E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/.Xil/Vivado-33304-DESKTOP-1FT5C23
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2021.1
+XILINX_SDK: C:/Xilinx/Vitis/2021.1
+XILINX_VITIS: C:/Xilinx/Vitis/2021.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2021.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 820 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 90 MB (+91732kb) [00:00:09]
+// [Engine Memory]: 820 MB (+707832kb) [00:00:09]
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: E:\FPGAProject\01102022\FPGAResearch\Z_Fresh\Z_Final\FPGA_Implementation\Pipelined_8_Input\CVNN\64_16bit_CVNN\64_CVNN\64_CVNN.xpr. Version: Vivado v2021.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/64_CVNN.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN/64_CVNN.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN' INFO: [Project 1-313] Project file moved from 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/64_16bit_CVNN/64_CVNN' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// HMemoryUtils.trashcanNow. Engine heap size: 820 MB. GUI used memory: 59 MB. Current time: 10/20/23, 12:51:32 PM CST
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 122 MB (+29054kb) [00:00:18]
+// WARNING: HEventQueue.dispatchEvent() is taking  7628 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1257.930 ; gain = 0.000 
+// [GUI Memory]: 130 MB (+1583kb) [00:00:24]
+// Project name: 64_CVNN; location: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/64_16bit_CVNN/64_CVNN; part: xq7vx690trf1930-1I
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 137 MB (+478kb) [00:00:30]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // i
+// [GUI Memory]: 148 MB (+4317kb) [00:00:37]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, main.vhd]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, main.vhd]", 8, false, false, false, false, false, true); // D - Double Click
+// bz (cs):  Opening Editor : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 820 MB. GUI used memory: 89 MB. Current time: 10/20/23, 12:52:26 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 820 MB. GUI used memory: 89 MB. Current time: 10/20/23, 12:52:56 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 820 MB. GUI used memory: 89 MB. Current time: 10/20/23, 12:53:26 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 820 MB. GUI used memory: 89 MB. Current time: 10/20/23, 12:53:56 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 820 MB. GUI used memory: 89 MB. Current time: 10/20/23, 12:54:56 PM CST

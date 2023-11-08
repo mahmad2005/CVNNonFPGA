@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Sep 29 15:24:24 2023
+# Process ID: 58540
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/temp/128_16bit_CVNN/Vivado/scratch_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent41056 E:\FPGAProject\01102022\FPGAResearch\Z_Fresh\Z_Final\FPGA_Implementation\CVNN_Imp\temp\128_16bit_CVNN\Vivado\scratch_2\scratch_2.xpr
+# Log file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/temp/128_16bit_CVNN/Vivado/scratch_2/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/temp/128_16bit_CVNN/Vivado/scratch_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/temp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/CVNN/Vivado/Vivado/scratch_1/nn_tb_behav.wcfg
+source nn_tb.tcl
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/CVNN/Vivado/Vivado/scratch_1/nn_tb_behav.wcfg
+source nn_tb.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/CVNN/Vivado/Vivado/scratch_1/nn_tb_behav.wcfg
+source nn_tb.tcl
+run 200 us
+close_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+copy_run -name synth_1_copy_4 [get_runs synth_1] 
+set_property board_part xilinx.com:vc707:part0:1.4 [current_project]
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_design; open_run impl_1
+export_ip_user_files -of_objects  [get_files E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/temp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/constrs_1/new/config.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/temp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/constrs_1/new/config.xdc
+file delete -force E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/temp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/constrs_1/new/config.xdc
+open_run synth_1 -name synth_1
+close [ open E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/temp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/constrs_1/new/config.xdc w ]
+add_files -fileset constrs_1 E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/temp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/constrs_1/new/config.xdc
+set_property target_constrs_file E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/CVNN_Imp/temp/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/constrs_1/new/config.xdc [current_fileset -constrset]
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+current_design synth_1
+save_constraints -force
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+current_design synth_1
+save_constraints -force
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design

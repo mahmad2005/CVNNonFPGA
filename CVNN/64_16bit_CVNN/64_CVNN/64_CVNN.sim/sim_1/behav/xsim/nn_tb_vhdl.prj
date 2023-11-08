@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../64_CVNN.srcs/sources_1/new/nn_package.vhd" \
+"../../../../64_CVNN.srcs/sources_1/new/adder.vhd" \
+"../../../../64_CVNN.srcs/sources_1/new/main.vhd" \
+"../../../../64_CVNN.srcs/sources_1/new/mult_complex.vhd" \
+"../../../../64_CVNN.srcs/sources_1/new/n_output.vhd" \
+"../../../../64_CVNN.srcs/sources_1/new/reluAct.vhd" \
+"../../../../64_CVNN.srcs/sources_1/new/nn_tb.vhd" \
+
+# Do not sort compile order
+nosort

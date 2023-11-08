@@ -1,0 +1,101 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Tue Oct 24 10:08:22 2023
+| Host         : DESKTOP-1FT5C23 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7vx485t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    23 |
+|    Minimum number of control sets                        |    23 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    41 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    23 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |    17 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            4961 |         1241 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             422 |          153 |
+| Yes          | No                    | No                     |             320 |           80 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |         Enable Signal        |                                    Set/Reset Signal                                    | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[17].mult_unit/all_stage_xw_real_reg_reg[15][17][15][12]   |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[2].mult_unit/all_stage_xw_real_reg_reg[15][2][14]_0[12]   |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[1].mult_unit/all_stage_xw_real_reg_reg[15][1][15]_0[14]   |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[4].mult_unit/all_stage_xw_real_reg_reg[15][4][14]_0[14]   |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[0].mult_unit/x[14]                                        |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[10].mult_unit/all_stage_xw_real_reg_reg[15][10][14]_0[15] |                4 |             15 |         3.75 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[11].mult_unit/all_stage_xw_real_reg_reg[15][11][15]_0[15] |                4 |             15 |         3.75 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[12].mult_unit/O[2]                                        |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[14].mult_unit/all_stage_xw_real_reg_reg[15][14][14]_0[13] |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[15].mult_unit/all_stage_xw_real_reg_reg[15][15][15]_0[15] |                4 |             15 |         3.75 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[18].mult_unit/all_stage_xw_real_reg_reg[15][18][15]_0[2]  |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[5].mult_unit/O[2]                                         |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[6].mult_unit/all_stage_xw_real_reg_reg[15][6][14]_0[15]   |                4 |             15 |         3.75 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[7].mult_unit/O[2]                                         |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[8].mult_unit/all_stage_xw_real_reg_reg[15][8][14]_0[14]   |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG |                              | L2GEN[0].output_unit/multgen[9].mult_unit/O[2]                                         |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG |                              | L2GEN[2].output_unit/multgen[13].mult_unit/x[14]                                       |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG |                              | L2GEN[3].output_unit/multgen[19].mult_unit/x[14]                                       |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG |                              | L2GEN[4].output_unit/multgen[3].mult_unit/all_stage_xw_real_reg_reg[15][3][14]_0[12]   |                6 |             15 |         2.50 |
+|  clk_IBUF_BUFG |                              | all_stage_xw_real_reg[15][0]                                                           |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG |                              | clear                                                                                  |               57 |            113 |         1.98 |
+|  clk_IBUF_BUFG | all_stage_xw_real_reg[15][0] |                                                                                        |               80 |            320 |         4.00 |
+|  clk_IBUF_BUFG |                              |                                                                                        |             1241 |           4961 |         4.00 |
++----------------+------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Raw_MNIST.srcs/sources_1/new/nn_package.vhd" \
+"../../../../Raw_MNIST.srcs/sources_1/new/main.vhd" \
+"../../../../Raw_MNIST.srcs/sources_1/new/mult.vhd" \
+"../../../../Raw_MNIST.srcs/sources_1/new/n_output.vhd" \
+"../../../../Raw_MNIST.srcs/sources_1/new/reluAct.vhd" \
+"../../../../Raw_MNIST.srcs/sources_1/new/nn_tb.vhd" \
+
+# Do not sort compile order
+nosort

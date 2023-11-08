@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Sep 28 02:50:54 2023
+# Process ID: 75240
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/RVNN/Vivado/64_RVNN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26800 E:\FPGAProject\01102022\FPGAResearch\Z_Fresh\Z_Final\FPGA_Implementation\RVNN\Vivado\64_RVNN\64_RVNN.xpr
+# Log file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/RVNN/Vivado/64_RVNN/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/RVNN/Vivado/64_RVNN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/RVNN/Vivado/64_RVNN/64_RVNN.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/RVNN/Vivado/64_RVNN'
+INFO: [Project 1-313] Project file moved from 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/RVNN/Vivado/64_RVNN' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/RVNN/Vivado/64_RVNN/64_RVNN.gen/sources_1', nor could it be found using path 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/RVNN/Vivado/64_RVNN/64_RVNN.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1281.457 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Device 21-403] Loading part xq7vx690trf1930-1I
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.433 . Memory (MB): peak = 4270.602 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2896 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 5211.074 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 5211.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 5211.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 5211.074 ; gain = 1475.781
+open_report: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 5211.074 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 28 03:38:27 2023...

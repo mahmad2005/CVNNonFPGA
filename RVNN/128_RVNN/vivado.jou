@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Oct 20 16:43:40 2023
+# Process ID: 23348
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/128_RVNN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24472 E:\FPGAProject\01102022\FPGAResearch\Z_Fresh\Z_Final\FPGA_Implementation\Pipelined_8_Input\RVNN\128_RVNN\RVNN_Stratch_1.xpr
+# Log file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/128_RVNN/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/128_RVNN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/128_RVNN/RVNN_Stratch_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/128_RVNN/nn_tb_behav.wcfg
+source nn_tb.tcl
+run 200 us
+copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1
+set_property board_part xilinx.com:vc707:part0:1.4 [current_project]
+close_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1

@@ -1,0 +1,610 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Oct 20 17:35:35 2023
+# Process ID: 15800
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23956 E:\FPGAProject\01102022\FPGAResearch\Z_Fresh\Z_Final\FPGA_Implementation\Pipelined_8_Input\RVNN\64_RVNN\64_RVNN.xpr
+# Log file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN'
+INFO: [Project 1-313] Project file moved from 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/RVNN/Vivado/64_RVNN' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.gen/sources_1', nor could it be found using path 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/RVNN/Vivado/64_RVNN/64_RVNN.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1257.746 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'nn_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'nn_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj nn_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.srcs/sources_1/new/nn_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.srcs/sources_1/new/mult.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.srcs/sources_1/new/n_output.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'n_output'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.srcs/sources_1/new/reluAct.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reluAct'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.srcs/sources_1/new/nn_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nn_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.sim/sim_1/behav/xsim'
+"xelab -wto 4f59646566a1466188d3599fcad5c033 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot nn_tb_behav xil_defaultlib.nn_tb -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 4f59646566a1466188d3599fcad5c033 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot nn_tb_behav xil_defaultlib.nn_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.nn_package
+Compiling architecture behavioral of entity xil_defaultlib.mult [mult_default]
+Compiling architecture behavioral of entity xil_defaultlib.reluAct [reluact_default]
+Compiling architecture behavioral of entity xil_defaultlib.n_output [n_output_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.nn_tb
+Built simulation snapshot nn_tb_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.sim/sim_1/behav/xsim/xsim.dir/nn_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 20 17:38:18 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 3316.703 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '23' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "nn_tb_behav -key {Behavioral:sim_1:Functional:nn_tb} -tclbatch {nn_tb.tcl} -view {E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/nn_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/nn_tb_behav.wcfg
+WARNING: Simulation object /nn_tb/x_imag was not found in the design.
+WARNING: Simulation object /nn_tb/y_imag was not found in the design.
+source nn_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'nn_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 3316.703 ; gain = 0.000
+run 200 us
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3316.703 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_run impl_1
+INFO: [Device 21-403] Loading part xq7vx690trf1930-1I
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.352 . Memory (MB): peak = 3316.703 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2896 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3316.703 ; gain = 0.000
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3316.703 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3316.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 3316.703 ; gain = 0.000
+open_report: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3316.703 ; gain = 0.000
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.2/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.2/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.2/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.2/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1
+impl_1_copy_1
+set_property board_part xilinx.com:vc707:part0:1.4 [current_project]
+WARNING: [Project 1-153] The current project device 'xq7vx690trf1930-1i' does not match with the device on the 'XILINX.COM:VC707:PART0:1.4' board part. A device change to match the device on 'XILINX.COM:VC707:PART0:1.4' board part is being done. Please upgrade the IP in the project via the upgrade_ip command or by selecting Reports => Reports IP Status.
+INFO: [Project 1-152] Project part set to virtex7 (xc7vx485tffg1761-2)
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/synth_1
+
+save_constraints -force
+launch_runs impl_1 -jobs 8
+[Fri Oct 20 17:41:11 2023] Launched synth_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/synth_1/runme.log
+[Fri Oct 20 17:41:11 2023] Launched impl_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/impl_1/runme.log
+close_design; open_run impl_1
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.315 . Memory (MB): peak = 3357.043 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2258 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3357.043 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3357.043 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3357.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 3357.043 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'nn_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'nn_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj nn_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.sim/sim_1/behav/xsim'
+"xelab -wto 4f59646566a1466188d3599fcad5c033 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot nn_tb_behav xil_defaultlib.nn_tb -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 4f59646566a1466188d3599fcad5c033 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot nn_tb_behav xil_defaultlib.nn_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "nn_tb_behav -key {Behavioral:sim_1:Functional:nn_tb} -tclbatch {nn_tb.tcl} -view {E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/nn_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/nn_tb_behav.wcfg
+WARNING: Simulation object /nn_tb/x_imag was not found in the design.
+WARNING: Simulation object /nn_tb/y_imag was not found in the design.
+source nn_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'nn_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 3394.758 ; gain = 30.645
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+save_constraints
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/synth_1
+
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+[Fri Oct 20 20:48:49 2023] Launched synth_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/synth_1/runme.log
+[Fri Oct 20 20:48:49 2023] Launched impl_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.421 . Memory (MB): peak = 3395.047 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2258 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 3395.047 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 3395.047 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 3395.047 ; gain = 0.000
+open_report: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3395.047 ; gain = 0.000
+set_input_delay
+ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_input_delay -help' for usage info.
+set_input_delay -help
+set_input_delay
+
+Description: 
+Set input delay on ports
+
+Syntax: 
+set_input_delay  [-clock <args>] [-reference_pin <args>] [-clock_fall] [-rise]
+                 [-fall] [-max] [-min] [-add_delay] [-network_latency_included]
+                 [-source_latency_included] [-quiet] [-verbose] <delay>
+                 <objects>
+
+Usage: 
+  Name                         Description
+  ----------------------------------------
+  [-clock]                     Relative clock
+  [-reference_pin]             Relative pin or port
+  [-clock_fall]                Delay is relative to falling edge of clock
+  [-rise]                      Specifies rising delay
+  [-fall]                      Specifies falling delay
+  [-max]                       Specifies maximum delay
+  [-min]                       Specifies minimum delay
+  [-add_delay]                 Don't remove existing input delay
+  [-network_latency_included]  Specifies network latency of clock already 
+                               included
+  [-source_latency_included]   Specifies source latency of clock already 
+                               included
+  [-quiet]                     Ignore command errors
+  [-verbose]                   Suspend message limits during command 
+                               execution
+  <delay>                      Delay value
+  <objects>                    List of ports
+
+Categories: 
+SDC, XDC
+
+Description:
+
+  Note: The XDC > Timing Constraints language templates and the Timing
+  Constraints Wizard in the Vivado IDE offer timing diagrams and additional
+  details around defining specific timing constraints. You can refer to these
+  sources for additional information.
+
+  Specifies the external system-level path delay on a primary input port
+  relative to a clock edge at the interface of the design. The input delay
+  value is specified in nanoseconds (ns), and can be positive or negative,
+  depending on the clock and data relative phase at the interface of the
+  device.
+
+  To accurately model the system-level timing of your Xilinx FPGA design, you
+  must assign timing delays for objects external to the FPGA onto the primary
+  input or output ports in your design. These delays are defined by the
+  set_input_delay and set_output_delay commands.
+
+  Note: If the input port also has a set_max_delay constraint assigned, the
+  specified input delay value is considered part of the max_delay
+  computation. That is, the input delay consumes a portion of the max delay
+  on the timing path that includes the input port.
+
+  This command returns nothing if successful, or returns an error if it fails.
+
+Arguments:
+
+  -clock <arg> - (Optional) Indicates that the input delay is relative to the
+  specified clock. By default the rising edge is used. However the
+  -clock_fall argument can be used to indicate that the falling edge should
+  be used instead.
+
+  -reference_pin <arg> - (Optional) Specifies that the delay is relative to
+  the active edge of a clock appearing on the specified pin or port rather
+  than a clock.
+
+  -clock_fall - (Optional) Specifies that the delay is relative to a falling
+  edge of the clock rather than rising edge.
+
+  -rise - (Optional) Specifies the input delay applies to rising transitions
+  on the specified ports. The default is to apply the delay for both rising
+  and falling transitions.
+
+  -fall - (Optional) Specifies the input delay applied to falling transitions
+  on the specified ports. The default is to apply the delay for both rising
+  and falling transitions.
+
+  -max - (Optional) Indicates the input delay specified is only used when
+  calculating the maximum (longest) path delays.
+
+  -min - (Optional) Indicates the input delay specified is only used when
+  calculating the minimum (shortest) path delays.
+
+  -add_delay - (Optional) Add the specified delay constraint to the port, to
+  coexist with any other set_input_delay constraints already defined on the
+  port. The default behavior is to replace the existing delays.
+
+  -network_latency_included - (Optional) Indicates that the clock network
+  latency of the reference clock is included in the delay value. The Vivado
+  timing engine considers the clock edge reaching the capture flop after the
+  clock latencies unless the specified input or output delay value includes
+  the source latency or network latency.
+
+  -source_latency_included - (Optional) Indicates that the source latency of
+  the relative clock is included in the specified delay value.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <delay> - (Required) The input delay specified as nanoseconds (ns) to apply
+  to the specified ports. Valid values are floating point numbers, with a
+  default value of 0.
+
+  <objects> - (Required) The list of ports to which the delay value will be
+  assigned.
+
+Examples:
+
+  The following example specifies the input delay on port DIN. The input
+  delay is 3 and is relative to the rising edge of clock clk1:
+
+    set_input_delay -clock clk1 3 DIN  
+    
+
+  The following example specifies the input delay on port DIN. The input
+  delay is 2 and is relative to the falling edge of the clock clk1:
+
+    set_input_delay -clock_fall -clock clk1 2 DIN 
+    
+
+  The following example specifies the input delay on port reset. The input
+  delay is 2 and is relative to the rising edge of the clock that appears on
+  the pin wbClk_IBUF_BUFG_inst/O, originating from the clock wbClk:
+
+    set_input_delay -clock wbClk 2 -reference_pin \  
+       [get_pin wbClk_IBUF_BUFG_inst/O] reset  
+    
+
+  This example creates a clock named clk_ddr, and defines input delay
+  constraints from data launched by both rising and falling edges of the
+  clock outside the device to the data input of the internal flip-flop that
+  is sensitive to both rising and falling clock edges:
+
+    create_clock -name clk_ddr -period 6 [get_ports DDR_CLK_IN]  
+    set_input_delay -clock clk_ddr -max 2.1 [get_ports DDR_IN]  
+    set_input_delay -clock clk_ddr -max 1.9 [get_ports DDR_IN] -clock_fall -add_delay  
+    set_input_delay -clock clk_ddr -min 0.9 [get_ports DDR_IN]  
+    set_input_delay -clock clk_ddr -min 1.1 [get_ports DDR_IN] -clock_fall -add_delay 
+    
+
+  Note: The use of the -add_delay option allows the new min and max delay
+  constraints to exist alongside the first delays on the same port.
+
+  The following example specifies the input delay on all non clock input
+  ports of the design. Although all_inputs returns all ports of the design,
+  including clock ports, set_input_delay will skip setting input delays on
+  the clock ports. The input delay is 1 relative to the rising edge of the
+  clock wbClk:
+
+    set_input_delay -clock wbClk 1 [all_inputs] 
+    
+
+  The following example sets an input delay of 4 relative to the rising edge
+  of the clock wbClk on the ports reset and wbDataForInput:
+
+    set_input_delay -clock wbClk 4 [list reset wbDataForInput] 
+    
+
+See Also:
+
+   *  all_clocks
+   *  all_inputs
+   *  check_timing
+   *  create_clock
+   *  get_ports
+   *  report_timing
+   *  set_max_delay
+   *  set_output_delay
+ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_input_delay -help' for usage info.
+ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_input_delay -help' for usage info.
+set_input_delay 0.0
+ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_input_delay -help' for usage info.
+set_input_delay 0
+ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_input_delay -help' for usage info.
+ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_input_delay -help' for usage info.
+ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_input_delay -help' for usage info.
+set_input_delay -clock [get_ports clk] 3.5
+ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_input_delay -help' for usage info.
+ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_input_delay -help' for usage info.
+set_input_delay -clock clk 3
+ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_input_delay -help' for usage info.
+set_input_delay -clock clk 3 DIN
+WARNING: [Vivado 12-661] port or pin 'DIN' not found.
+ERROR: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects DIN'.
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+set_input_delay -clock [get_ports clk] 3.5 [get_ports *]
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(clock)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed.
+ERROR: [Constraints 18-472] set_input_delay: list does not contain any object of type(s) '(clock)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended.
+set_input_delay -clk [get_ports clk] 3.5 [get_ports *]
+ERROR: [Common 17-170] Unknown option '-clk', please type 'set_input_delay -help' for usage info.
+ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_input_delay -help' for usage info.
+ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_input_delay -help' for usage info.
+ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_input_delay -help' for usage info.
+set_input_delay -clock [get_clocks  "*"] 3.5 [get_ports [list x_real[0][0] x_real[0][1] x_real[0][2] x_real[0][3] x_real[0][4] x_real[0][5] x_real[0][6] x_real[0][7] x_real[0][8] x_real[0][9] x_real[0][10] x_real[0][11] x_real[0][12] x_real[0][13] x_real[0][14] x_real[0][15] x_real[1][0] x_real[1][1] x_real[1][2] x_real[1][3] x_real[1][4] x_real[1][5] x_real[1][6] x_real[1][7] x_real[1][8] x_real[1][9] x_real[1][10] x_real[1][11] x_real[1][12] x_real[1][13] x_real[1][14] x_real[1][15] x_real[2][0] x_real[2][1] x_real[2][2] x_real[2][3] x_real[2][4] x_real[2][5] x_real[2][6] x_real[2][7] x_real[2][8] x_real[2][9] x_real[2][10] x_real[2][11] x_real[2][12] x_real[2][13] x_real[2][14] x_real[2][15] x_real[3][0] x_real[3][1] x_real[3][2] x_real[3][3] x_real[3][4] x_real[3][5] x_real[3][6] x_real[3][7] x_real[3][8] x_real[3][9] x_real[3][10] x_real[3][11] x_real[3][12] x_real[3][13] x_real[3][14] x_real[3][15] x_real[4][0] x_real[4][1] x_real[4][2] x_real[4][3] x_real[4][4] x_real[4][5] x_real[4][6] x_real[4][7] x_real[4][8] x_real[4][9] x_real[4][10] x_real[4][11] x_real[4][12] x_real[4][13] x_real[4][14] x_real[4][15] x_real[5][0] x_real[5][1] x_real[5][2] x_real[5][3] x_real[5][4] x_real[5][5] x_real[5][6] x_real[5][7] x_real[5][8] x_real[5][9] x_real[5][10] x_real[5][11] x_real[5][12] x_real[5][13] x_real[5][14] x_real[5][15] x_real[6][0] x_real[6][1] x_real[6][2] x_real[6][3] x_real[6][4] x_real[6][5] x_real[6][6] x_real[6][7] x_real[6][8] x_real[6][9] x_real[6][10] x_real[6][11] x_real[6][12] x_real[6][13] x_real[6][14] x_real[6][15] x_real[7][0] x_real[7][1] x_real[7][2] x_real[7][3] x_real[7][4] x_real[7][5] x_real[7][6] x_real[7][7] x_real[7][8] x_real[7][9] x_real[7][10] x_real[7][11] x_real[7][12] x_real[7][13] x_real[7][14] x_real[7][15] x_real[8][0] x_real[8][1] x_real[8][2] x_real[8][3] x_real[8][4] x_real[8][5] x_real[8][6] x_real[8][7] x_real[8][8] x_real[8][9] x_real[8][10] x_real[8][11] x_real[8][12] x_real[8][13] x_real[8][14] x_real[8][15] x_real[9][0] x_real[9][1] x_real[9][2] x_real[9][3] x_real[9][4] x_real[9][5] x_real[9][6] x_real[9][7] x_real[9][8] x_real[9][9] x_real[9][10] x_real[9][11] x_real[9][12] x_real[9][13] x_real[9][14] x_real[9][15] x_real[10][0] x_real[10][1] x_real[10][2] x_real[10][3] x_real[10][4] x_real[10][5] x_real[10][6] x_real[10][7] x_real[10][8] x_real[10][9] x_real[10][10] x_real[10][11] x_real[10][12] x_real[10][13] x_real[10][14] x_real[10][15] x_real[11][0] x_real[11][1] x_real[11][2] x_real[11][3] x_real[11][4] x_real[11][5] x_real[11][6] x_real[11][7] x_real[11][8] x_real[11][9] x_real[11][10] x_real[11][11] x_real[11][12] x_real[11][13] x_real[11][14] x_real[11][15] x_real[12][0] x_real[12][1] x_real[12][2] x_real[12][3] x_real[12][4] x_real[12][5] x_real[12][6] x_real[12][7] x_real[12][8] x_real[12][9] x_real[12][10] x_real[12][11] x_real[12][12] x_real[12][13] x_real[12][14] x_real[12][15] x_real[13][0] x_real[13][1] x_real[13][2] x_real[13][3] x_real[13][4] x_real[13][5] x_real[13][6] x_real[13][7] x_real[13][8] x_real[13][9] x_real[13][10] x_real[13][11] x_real[13][12] x_real[13][13] x_real[13][14] x_real[13][15] x_real[14][0] x_real[14][1] x_real[14][2] x_real[14][3] x_real[14][4] x_real[14][5] x_real[14][6] x_real[14][7] x_real[14][8] x_real[14][9] x_real[14][10] x_real[14][11] x_real[14][12] x_real[14][13] x_real[14][14] x_real[14][15] x_real[15][0] x_real[15][1] x_real[15][2] x_real[15][3] x_real[15][4] x_real[15][5] x_real[15][6] x_real[15][7] x_real[15][8] x_real[15][9] x_real[15][10] x_real[15][11] x_real[15][12] x_real[15][13] x_real[15][14] x_real[15][15] ]]
+save_constraints
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/synth_1
+
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+[Fri Oct 20 21:53:03 2023] Launched synth_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/synth_1/runme.log
+[Fri Oct 20 21:53:03 2023] Launched impl_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.326 . Memory (MB): peak = 3472.184 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2258 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 3472.184 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 3472.184 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 3472.184 ; gain = 45.648
+open_report: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3556.719 ; gain = 84.535
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+save_constraints
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/synth_1
+
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+[Fri Oct 20 22:05:33 2023] Launched synth_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/synth_1/runme.log
+[Fri Oct 20 22:05:33 2023] Launched impl_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.275 . Memory (MB): peak = 3639.289 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2258 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3639.289 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3639.289 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 3639.289 ; gain = 56.168
+open_report: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3639.289 ; gain = 0.000
+save_constraints
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/synth_1
+
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+[Fri Oct 20 22:17:52 2023] Launched synth_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/synth_1/runme.log
+[Fri Oct 20 22:17:52 2023] Launched impl_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/RVNN/64_RVNN/64_RVNN.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.375 . Memory (MB): peak = 3771.547 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2258 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 3771.547 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 3771.547 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 3771.547 ; gain = 43.605
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 21 00:23:54 2023...

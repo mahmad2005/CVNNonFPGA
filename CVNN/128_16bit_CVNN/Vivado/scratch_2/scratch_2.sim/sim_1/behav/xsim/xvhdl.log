@@ -1,0 +1,13 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/sources_1/new/nn_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/sources_1/new/adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/sources_1/new/mult_complex.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult_complex'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/sources_1/new/n_output.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'n_output'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/sources_1/new/tansig.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tansig'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/128_16bit_CVNN/Vivado/scratch_2/scratch_2.srcs/sources_1/new/nn_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nn_tb'

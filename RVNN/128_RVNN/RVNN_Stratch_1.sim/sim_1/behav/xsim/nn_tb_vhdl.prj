@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../RVNN_Stratch_1.srcs/sources_1/new/nn_package.vhd" \
+"../../../../RVNN_Stratch_1.srcs/sources_1/new/main.vhd" \
+"../../../../RVNN_Stratch_1.srcs/sources_1/new/mult.vhd" \
+"../../../../RVNN_Stratch_1.srcs/sources_1/new/n_output.vhd" \
+"../../../../RVNN_Stratch_1.srcs/sources_1/new/reluAct.vhd" \
+"../../../../RVNN_Stratch_1.srcs/sources_1/new/nn_tb.vhd" \
+
+# Do not sort compile order
+nosort

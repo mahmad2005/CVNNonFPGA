@@ -1,0 +1,108 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sat Oct 21 21:07:23 2023
+| Host         : DESKTOP-1FT5C23 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7vx485t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    30 |
+|    Minimum number of control sets                        |    30 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     8 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    30 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    30 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            4801 |         1201 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             495 |          147 |
+| Yes          | No                    | No                     |             640 |          160 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------+--------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |      Enable Signal     |                                Set/Reset Signal                                | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+------------------------+--------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[10].mult_unit/A[15]                               |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[10].mult_unit/x[15]                               |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[12].mult_unit/A[15]                               |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[12].mult_unit/stage_8_xw_imag_reg_reg[12][14][15] |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[16].mult_unit/x[15]                               |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[15].mult_unit/A[15]                               |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[15].mult_unit/x[15]                               |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[16].mult_unit/A[15]                               |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[19].mult_unit/stage_8_xw_imag_reg_reg[19][14][15] |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[19].mult_unit/A[15]                               |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[2].mult_unit/A[15]                                |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[2].mult_unit/x[15]                                |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[4].mult_unit/A[15]                                |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[4].mult_unit/x[15]                                |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[7].mult_unit/A[15]                                |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[0].output_unit/multgen[7].mult_unit/x[12]                                |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[1].output_unit/multgen[17].mult_unit/x[12]                               |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG |                        | L2GEN[1].output_unit/multgen[17].mult_unit/x_i[15]                             |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG |                        | L2GEN[2].output_unit/multgen[3].mult_unit/A[14]                                |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[2].output_unit/multgen[3].mult_unit/C[14]                                |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[4].output_unit/multgen[13].mult_unit/C[14]                               |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[4].output_unit/multgen[13].mult_unit/x_i[15]                             |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG |                        | L2GEN[5].output_unit/multgen[6].mult_unit/A[14]                                |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[5].output_unit/multgen[6].mult_unit/x_i[12]                              |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG |                        | L2GEN[5].output_unit/multgen[9].mult_unit/C[14]                                |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG |                        | L2GEN[5].output_unit/multgen[9].mult_unit/x[12]                                |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG |                        | stage_8_xw_real_reg[0]                                                         |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG |                        | clear                                                                          |               11 |             47 |         4.27 |
+|  clk_IBUF_BUFG | stage_8_xw_real_reg[0] |                                                                                |              160 |            640 |         4.00 |
+|  clk_IBUF_BUFG |                        |                                                                                |             1201 |           4801 |         4.00 |
++----------------+------------------------+--------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Oct 21 20:02:24 2023
+# Process ID: 1936
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/128_16bit_CVNN/Vivado/scratch_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26492 E:\FPGAProject\01102022\FPGAResearch\Z_Fresh\Z_Final\FPGA_Implementation\Pipelined_8_Input\CVNN\128_16bit_CVNN\Vivado\scratch_2\scratch_2.xpr
+# Log file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/128_16bit_CVNN/Vivado/scratch_2/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/128_16bit_CVNN/Vivado/scratch_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/Z_Final/FPGA_Implementation/Pipelined_8_Input/CVNN/128_16bit_CVNN/Vivado/scratch_2/scratch_2.xpr
+update_compile_order -fileset sources_1
+open_run impl_1
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/CVNN/Vivado/Vivado/scratch_1/nn_tb_behav.wcfg
+source nn_tb.tcl
+run 200 us
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+save_wave_config {E:/FPGAProject/01102022/FPGAResearch/Z_Fresh/CVNN/Vivado/Vivado/scratch_1/nn_tb_behav.wcfg}
+close_sim
+open_run impl_1
